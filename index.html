@@ -1,0 +1,48 @@
+<div class="converter-app">
+  <header class="app-header">
+    <h1>Image Alchemy</h1>
+    <p>Convert images effortlessly</p>
+  </header>
+  
+  <div class="drop-zone" id="dropZone">
+    <div class="drop-content">
+      <i class="upload-icon"></i>
+      <p>Drag & drop images here</p>
+      <button class="browse-btn">or browse files</button>
+    </div>
+  </div>
+  
+  <div class="controls-panel">
+    <div class="format-selector">
+      <label>Output Format:</label>
+      <select>
+        <option>JPG</option>
+        <option>PNG</option>
+        <option>WEBP</option>
+        <option>GIF</option>
+      </select>
+    </div>
+    
+    <div class="quality-control">
+      <label>Quality: <span id="qualityValue">85%</span></label>
+      <input type="range" min="1" max="100" value="85">
+    </div>
+    
+    <div class="size-control">
+      <label>Resize:</label>
+      <input type="number" placeholder="Width">
+      <span>×</span>
+      <input type="number" placeholder="Height">
+      <button class="lock-aspect">🔒</button>
+    </div>
+  </div>
+  
+  <button class="convert-btn" id="convertBtn">
+    Convert All
+    <span class="processing-indicator"></span>
+  </button>
+  
+  <div class="preview-grid" id="previewGrid">
+    <!-- Thumbnails of uploaded images appear here -->
+  </div>
+</div>
